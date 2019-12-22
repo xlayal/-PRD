@@ -43,6 +43,7 @@
 * 请求方式：POST
 * 请求URL： https://aip.baidubce.com/rest/2.0/image-classify/v1/body_num
 * 输入代码示例
+
 ```
 Python代码示例
 
@@ -67,6 +68,11 @@ headers = {'content-type': 'application/x-www-form-urlencoded'}
 response = requests.post(request_url, data=params, headers=headers)
 if response:
     print (response.json())
-    ```
+```
+* 输出示例
+```
+{'person_num': 14, 'log_id': 8386600918089470214}  #识别图像中的人流量数字结果
+```
+
 
                 
