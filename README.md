@@ -29,6 +29,7 @@
 
 ## 二、产品设计原型
 ### 1、交互及界面设计
+![人流量系统](https://upload-images.jianshu.io/upload_images/9412832-db82c52258bc3890.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ### 2、信息设计
 ### 3、原型文档 
 ### 4、口头操作说明 
