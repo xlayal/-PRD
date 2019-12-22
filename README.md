@@ -33,10 +33,40 @@
 ### 2、信息设计
 ![信息设计](https://upload-images.jianshu.io/upload_images/9412832-2628790d77891216.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ### 3、原型文档 
-### 4、口头操作说明 
+
 ## 三、API 产品使用及输出展示（人流量监控）
 ### 1、API展示说明及输出 
-### 2、使用比较分析
-### 3、使用后风险报告
+* 人流量统计识别（使用百度API）
+* 人脸与人体识别——人流量统计API
+* 接口描述：统计图像中的人体个数和流动趋势，以头肩为主要识别目标统计人数，无需正脸、全身照，适应人群密集、各种出入口场景。 摄像头硬件选型无特殊要求，分辨率建议720p以上，更低分辨率的图片也能识别，只是效果可能有差异。暂不适用夜间红外监控图片，后续会考虑扩展。（需和各艺术馆协商提供实时监控视频图像，此API示例以某博物馆人流图为例）
+* 接口地址: 百度AI人体分析之人流量统计API
+* 请求方式：POST
+* 请求URL： https://aip.baidubce.com/rest/2.0/image-classify/v1/body_num
+* 输入代码示例
+```
+Python代码示例
+
+# encoding:utf-8
+
+import requests
+import base64
+
+'''
+人流量统计
+'''
+
+request_url = "https://aip.baidubce.com/rest/2.0/image-classify/v1/body_num"
+# 二进制方式打开图片文件
+f = open('human.jpg', 'rb')  #上传人流量图像
+img = base64.b64encode(f.read())
+
+params = {"image":img}
+access_token = '[此处输入你获取到的token]'
+request_url = request_url + "?access_token=" + access_token
+headers = {'content-type': 'application/x-www-form-urlencoded'}
+response = requests.post(request_url, data=params, headers=headers)
+if response:
+    print (response.json())
+    ```
 
                 
