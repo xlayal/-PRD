@@ -32,7 +32,7 @@
 ![人流量系统](https://upload-images.jianshu.io/upload_images/9412832-8c3032c684d4215f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ### 2、信息设计
 ![信息设计](https://upload-images.jianshu.io/upload_images/9412832-2628790d77891216.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-### 3、原型文档 
+### 3、Axure原型文档 [博物馆Axure原型](https://gitee.com/xlayal/museum)
 
 ## 三、API 产品使用及输出展示（人流量监控）
 ### 1、API展示说明及输出 
